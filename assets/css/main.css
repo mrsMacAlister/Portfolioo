@@ -3100,6 +3100,11 @@ button:disabled,
 #menu {
   margin-top: 60px !important;
 }
+
+p {
+  text-align: justify;
+}
+
 a.logo {
   text-align: right;
 }

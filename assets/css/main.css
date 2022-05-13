@@ -3097,6 +3097,12 @@ button:disabled,
   padding-top: 0;
 }
 
+#menu {
+  margin-top: 60px !important;
+}
+a.logo {
+  text-align: right;
+}
 /*Spinning words animation*/
 #spin-animation .word-a {
   color: rgb(238, 80, 7);
@@ -3128,7 +3134,7 @@ button:disabled,
   display: block;
   height: 100%;
   padding-left: 10px;
-  animation: spin-words 7s infinite;
+  animation: spin-words 7.5s infinite;
 }
 
 @keyframes spin-words {
@@ -3154,7 +3160,7 @@ button:disabled,
     transform: translateY(-412%);
   }
   100% {
-    transform: translateY(-400%);
+    transform: translateY(-396%);
   }
 }
 
@@ -3191,6 +3197,19 @@ div.image.right {
   padding: 0 !important;
   margin: 0;
   height: 0 !important;
+}
+
+@media (min-width: 1680px) {
+  .skills-set {
+    transform: scale(1.5);
+    transform: translateX(60px);
+  }
+}
+
+@media (max-width: 735px) {
+  .skills-set {
+    transform: scale(0.8);
+  }
 }
 
 .icons {
@@ -3264,10 +3283,28 @@ a .certificate .icon {
   margin-bottom: 0;
 }
 
+.certificate {
+  transition: all 170ms ease-in-out;
+}
+.certificate:hover {
+  transform: scale(1.2);
+}
 .icon {
   margin-bottom: 0;
 }
 
 .future-learn {
   font-weight: bold;
+}
+
+.contact-me {
+  margin-left: 30px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  font-size: 12px;
 }
